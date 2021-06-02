@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".AnimalInfo">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="52dp"
+        app:cardCornerRadius="125dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <ImageView
+            android:id="@+id/imgCircled"
+            android:layout_width="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_height="match_parent"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+<androidx.cardview.widget.CardView
+    android:layout_width="350dp"
+    android:layout_marginTop="15dp"
+    app:cardCornerRadius="9dp"
+    app:layout_constraintEnd_toEndOf="@+id/cardView2"
+    app:cardBackgroundColor="@android:color/transparent"
+    app:layout_constraintStart_toStartOf="@+id/cardView2"
+    app:layout_constraintTop_toBottomOf="@+id/cardView2"
+    android:layout_height="250dp">
+    <TextView
+        android:id="@+id/animal"
+        android:layout_width="match_parent"
+        tools:text="SOme text"
+        android:background="@color/colorPrimary"
+        android:textAlignment="center"
+        android:layout_height="match_parent"
+        android:padding="10dp" />
+</androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
